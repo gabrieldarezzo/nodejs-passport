@@ -3,6 +3,6 @@ const router = express.Router();
 const MainController = require('./MainController');
 const isAuth = require('./../../auth/middleware');
 
-router.get('/', isAuth, MainController.index);
+router.get('/', MainController.index);
 
 module.exports = router

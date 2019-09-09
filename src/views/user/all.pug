@@ -2,14 +2,15 @@ extends ./../layout/index
 
 block content
     div(class="col-xs-12 col-md-12")
-        h2(class="text-center") Users
+        h2(class="text-center" style="padding-bottom: 30px;") Users:
 
         div(class="form-group")
             div(class="row")
-
-                a(href="/users/new" class="col-6 text-center")
+                a(href="/users/new" class="col-4 text-center")
                     button(type="submit" class="btn btn-primary") (+) Add New
-                a(href="/auth/logout" class="col-6 text-center")
+                a(href="/" class="col-4 text-center")
+                    button(type="submit" class="btn btn-primary") Home
+                a(href="/auth/logout" class="col-4 text-center")
                     button(type="submit" class="btn btn-warning") Logout
 
                 
