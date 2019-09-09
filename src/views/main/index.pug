@@ -1,4 +1,11 @@
 extends ./../layout/index
 
 block content
-    h1 Hello Express.js + Passportjs
+    div(class="col-xs-12 col-md-12")
+        h1 Hello Express.js + Passportjs
+
+        hr
+
+        div(class="form-group text-center")
+            a(href="/auth")
+                button(type="submit" class="btn btn-primary") Login

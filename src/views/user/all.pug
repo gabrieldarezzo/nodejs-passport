@@ -3,6 +3,10 @@ extends ./../layout/index
 block content
     div(class="col-xs-12 col-md-12")
         h2(class="text-center") Users
+
+        div(class="form-group text-right")
+            a(href="/users/new")
+                button(type="submit" class="btn btn-primary") (+) Add New
         table(class="table table-bordered")
             thead
                 tr
