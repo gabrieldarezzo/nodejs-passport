@@ -4,9 +4,15 @@ block content
     div(class="col-xs-12 col-md-12")
         h2(class="text-center") Users
 
-        div(class="form-group text-right")
-            a(href="/users/new")
-                button(type="submit" class="btn btn-primary") (+) Add New
+        div(class="form-group")
+            div(class="row")
+
+                a(href="/users/new" class="col-6 text-center")
+                    button(type="submit" class="btn btn-primary") (+) Add New
+                a(href="/auth/logout" class="col-6 text-center")
+                    button(type="submit" class="btn btn-warning") Logout
+
+                
         table(class="table table-bordered")
             thead
                 tr

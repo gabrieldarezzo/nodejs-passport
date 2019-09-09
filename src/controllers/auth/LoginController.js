@@ -12,4 +12,10 @@ module.exports = {
     async login(req, res) {
         
     },
+    async logout(req, res) {
+        req.logout()
+        return res.redirect('/auth')
+    },
+
+    
 };
